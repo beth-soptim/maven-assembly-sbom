@@ -63,6 +63,33 @@
         <readme.update.skip>true</readme.update.skip>
     </properties>
 
+    <distributionManagement>
+        <repository>
+            <id>soptim-s-fork-releases</id>
+            <url>https://artifactory.soptim.net/artifactory/soptim-s-fork-releases</url>
+        </repository>
+        <snapshotRepository>
+            <id>soptim-s-fork-snapshots</id>
+            <url>https://artifactory.soptim.net/artifactory/soptim-s-fork-snapshots</url>
+        </snapshotRepository>
+    </distributionManagement>
+    <repositories>
+        <repository>
+            <id>soptim-s-fork-releases</id>
+            <url>https://artifactory.soptim.net/artifactory/soptim-s-fork-releases</url>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+        <repository>
+            <id>soptim-s-fork-snapshots</id>
+            <url>https://artifactory.soptim.net/artifactory/soptim-s-fork-snapshots</url>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+
     <dependencyManagement>
         <dependencies>
             <dependency>
